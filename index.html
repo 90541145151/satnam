@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hello!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Satnam Singh</h1>
+        <p>Student | Aspiring Professional at Petro Canada | Security Enthusiast</p>
+        <p>My name is Satnam Singh, and I am currently pursuing a program in Digital Media and Web Development. Throughout my studies, I have gained experience in various fields such as web development, user experience design, multimedia production, and project management. I have developed a strong foundation in creating responsive, accessible websites using HTML, CSS, and JavaScript, as well as frameworks like Bootstrap. Additionally, I have worked on interactive prototypes and have gained hands-on experience in photography, video production, and editing. I am passionate about combining creativity with technical skills and have worked on several personal and academic projects, such as building portfolios, web applications, and promotional videos. My organizational and leadership skills have been honed through supervising teams, managing workflows, and collaborating on group projects. I am also interested in exploring new technologies and trends in web development, particularly focusing on accessibility and usability. As I continue my academic journey, I strive to grow as both a developer and a designer, eager to tackle new challenges and improve my skills in multimedia production and digital storytelling.</p>
+        <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
+    </header>
+
+    <main class="container mt-5">
+        <section id="about" class="text-center">
+            <h2>About Me</h2>
+            <p>I am a dedicated student with a strong interest in pursuing a career with Petro Canada and in the security field. I am committed to delivering excellent service and ensuring safety in all environments.</p>
+        </section>
+
+        <section id="skills" class="mt-5">
+            <h2 class="text-center">Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Customer Service</li>
+                <li class="list-group-item">Safety Protocols</li>
+                <li class="list-group-item">Communication Skills</li>
+                <li class="list-group-item">Problem Solving</li>
+                <li class="list-group-item">Team Collaboration</li>
+                <li class="list-group-item">Technical Skills (e.g., basic coding, software use)</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="mt-5">
+            <h2 class="text-center">My Part time job</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm" data-toggle="modal" data-target="#project1Modal">
+                        <img src="image/petro.jpg" alt="Project 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Petro Canada</h5>
+                            <p class="card-text">As a Customer Service Representative at Petro-Canada, I was responsible for providing excellent customer service while maintaining a positive, friendly, and professional atmosphere in the gas station and convenience store. My role involved interacting with customers, processing transactions, and ensuring a clean and safe environment for all visitors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm" data-toggle="modal" data-target="#project2Modal">
+                        <img src="image/download.jpg" alt="Project 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Security</h5>
+                            <p class="card-text">As a part-time security guard, I was responsible for maintaining a safe and secure environment at the assigned premises. My role involved monitoring the facility, ensuring the safety of employees and visitors, responding to emergencies, and preventing theft or unauthorized access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Project Title 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Detailed description of Project 1, including technologies used and the impact of the project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Project Title 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Detailed description of Project 2, including technologies used and the impact of the project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="text-center py-4 bg-dark text-white">
+        <h5>Contact Me</h5>
+        <p>Email: <a href="mailto:your.email@example.com" class="text-light">satnam@email.com</a></p>
+        <p>&copy; Satnam Singh</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
